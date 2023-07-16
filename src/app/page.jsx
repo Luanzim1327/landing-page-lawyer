@@ -2,6 +2,8 @@ import Header from "@/components/Header"
 import AreaAtuacao from "@/components/AreaAtuacao";
 import Sobre from "@/components/Sobre";
 import Footer from "@/components/Footer";
+import Comentarios from "@/components/Comentarios";
+import Contato from "@/components/Contato";
 
 export default function Home() {
   return (
@@ -9,8 +11,9 @@ export default function Home() {
       <Header />
       <AreaAtuacao />
       <Sobre />
+      <Comentarios />
+      <Contato />
       <Footer />
-
     </div>
   )
 }
