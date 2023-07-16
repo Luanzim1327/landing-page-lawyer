@@ -1,16 +1,24 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 import AdvogadoFoto from "../../public/advogado.png"
+import { useState } from "react";
 
 export default function Header () {
 
-    let itemsList = ["Home" , "Services" , "About" , "Contact"]
+    const [stateImage , setStateImage] = useState("https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png");
+    const [menu , setMenu] = useState(0);
+
+    let itemsList = ["Home" , "Services" , "About" , "Contact"];
 
     return (
         <header className="bg-slate-300">
-            <nav className="flex justify-between h-20 p-4 items-center text-slate-800">
-                <h2 className="font-bold text-2xl">Paulo Jr</h2>
-                <ul className="font-semibold flex gap-6 list-none">
+            <nav className="flex-col text-slate-800">
+                <div className="flex justify-between p-3">
+                    <h2 className="font-bold text-2xl">Logo</h2>
+                    <img width={30} name="menu" src={stateImage} alt="icon" />
+                </div>
+                <ul className="flex flex-col bg-slate-200">
                     <ListItem items={itemsList}/>
                 </ul>
             </nav>
@@ -35,6 +43,10 @@ function ListItem ({items}) {
             url = "/"
         }
 
-        return <li className="flex items-center" key={item}><Link className="h-full" href={`/${url}`}>{item}</Link></li>
+        return <li className="pl-4 py-3 hover:bg-slate-400" key={item}>{item}</li>
     })
+}
+
+function showMenu () {
+
 }
