@@ -1,18 +1,18 @@
 export default function Contact () {
     return(
         <section className="container mx-auto flex flex-col items-center py-5 ">
-            <div className="py-3 text-3xl font-semibold text-slate-800">
+            <div className="py-3 text-xl font-semibold text-slate-800">
                 <h2>O que eu posso fazer por você ?</h2>
             </div>
             <form action="https://formsubmit.co/contatoluanmas@gmail.com" method="POST" className="space-y-3">
-                <div className="flex justify-between">
+                <div className= "w-full">
                     
-                    <input type="text" className="w-1/3" placeholder="Seu nome" name="name" id="name" required/>
-                    <input type="email"className="w-2/3"  name="email" placeholder="Seu melhor email" required/>
+                    <input type="text" className="md:w-1/3 block w-full my-3 py-2 pl-2" placeholder="Seu nome" name="name" id="name" required/>
+                    <input type="email"className="md:w-2/3 block w-full my-3 py-2 pl-2"  name="email" placeholder="Seu melhor email" required/>
                 </div>
 
                 <div className="flex flex-col space-y-2">
-                    <input className="block" type="text" placeholder="Assunto" name="subject" id="subject" required/>
+                    <input className="block w-full py-2 pl-2" type="text" placeholder="Assunto" name="subject" id="subject" required/>
                     <textarea 
                         name="message" 
                         id="message" 
@@ -20,7 +20,7 @@ export default function Contact () {
                         rows="10" 
                         placeholder="Mensagem" 
                         required
-                        className="block"
+                        className="block pl-2"
                     />
                 </div>
 

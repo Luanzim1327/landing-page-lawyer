@@ -6,15 +6,15 @@ import LinkedinIcon from "../../public/linkedin.svg"
 export default function Footer () {
     return (
         <footer className="flex flex-col bg-slate-100">
-            <div className="flex justify-around items-start py-16">
-                <ul className="flex flex-col space-y-5">
+            <div className="flex flex-col px-2 bg-slate-300 pt-3">
+                <ul className="flex flex-col space-y-2">
                     <li className="text-slate-800">Adress : <a className="text-slate-600" href="#">391 Elgin St. Celina, Delaware 10299</a></li>
                     <li className="text-slate-800">Phone : <a className="text-slate-600" href="#">+84 1102 2703</a></li>
                     <li className="text-slate-800">Email Business : <a className="text-slate-600" href="#">example1234@gmail.com</a></li>
                 </ul>
-                <div>
-                    <h5 className="text-sm font-bold pb-4">SOCIAL:</h5>
-                    <div className="flex space-x-5">
+                <div className="py-3">
+                    <h5 className="text-sm font-bold py-2">SOCIAL</h5>
+                    <div className="flex space-x-4">
                         <a href="#">
                             <Image src={FacebookIcon} alt="FacebookIcon"/>
                         </a>
@@ -27,7 +27,7 @@ export default function Footer () {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-800 py-5 pl-10">
+            <div className="bg-slate-800 p-3 font-semibold">
                 <p className="text-slate-100 text-sm">
                 All rights reserved for Luan Silva @ 2023
                 </p>

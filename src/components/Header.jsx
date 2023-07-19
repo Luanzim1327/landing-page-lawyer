@@ -6,30 +6,42 @@ import { useState } from "react";
 
 export default function Header () {
 
-    const [stateImage , setStateImage] = useState("https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png");
-    const [menu , setMenu] = useState(0);
+    // const [stateImage , setStateImage] = useState("https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png");
+    // const [menu , setMenu] = useState(0);
 
     let itemsList = ["Home" , "Services" , "About" , "Contact"];
 
     return (
         <header className="bg-slate-300">
-            <nav className="flex-col text-slate-800">
-                <div className="flex justify-between p-3">
+            <nav className="md:flex md:justify-between items-center text-slate-800">
+                <div className="flex justify-between items-center px-2">
                     <h2 className="font-bold text-2xl">Logo</h2>
-                    <img width={30} name="menu" src={stateImage} alt="icon" />
+                    <img className="md:hidden py-2" width={30} name="menu" src={"https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png"} alt="icon" />
                 </div>
-                <ul className="flex flex-col bg-slate-200">
+                <ul className="md:bg-transparent md:items-center flex flex-col text-center md:flex-row bg-slate-200">
                     <ListItem items={itemsList}/>
                 </ul>
             </nav>
-            <div className="flex pt-10 justify-evenly ">
-                <div className="flex flex-col justify-center max-w-md max-h-72 bg-slate-200 space-y-4 p-5">
-                    <h2 className="text-3xl font-bold text-slate-800">Lorem ipsum dolor</h2>
-                    <p className="text-justify text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, numquam sunt explicabo adipisci voluptates amet. Nostrum ducimus deserunt cum, saepe reiciendis quis autem suscipit cupiditate facere sapiente possimus quia molestiae
-                    </p>
+            <div className="
+                flex flex-col
+                justify-center 
+                w-3/4
+                mx-auto  
+                py-5  
+            ">
+                <div className="flex justify-center">
+                    <Image src={AdvogadoFoto} width={200} alt="advogado"/>
                 </div>
-                <div>
-                    <Image src={AdvogadoFoto} height={400} width={400} alt="advogado"/>
+                <div className="
+                    flex flex-col 
+                    justify-center
+                  bg-slate-200
+                    p-2
+                    rounded
+                  ">
+                    <h2 className="py-2 text-xl font-bold text-slate-800">Lorem ipsum dolor</h2>
+                    <p className="text-justify text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, numquam sunt explicabo adipisci voluptates amet.
+                    </p>
                 </div>
             </div>
         </header>
@@ -43,10 +55,6 @@ function ListItem ({items}) {
             url = "/"
         }
 
-        return <li className="pl-4 py-3 hover:bg-slate-400" key={item}>{item}</li>
+        return <li className="cursor-pointer pl-4 py-3 md:px-2 font-semibold hover:bg-slate-400" key={item}>{item}</li>
     })
-}
-
-function showMenu () {
-
 }
