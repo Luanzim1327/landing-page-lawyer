@@ -1,13 +1,13 @@
 import Image from "next/image"
 import ImagePerson from "../../public/comentarios/cm-1.jpg"
-
+// stars within container comentary
 export default function Comentarios () {
     return (
         <section className="flex flex-col items-center">
             <div className="py-5">
                 <h2 className="font-bold text-3xl text-slate-800">Meus clientes</h2>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:w-3/4 md:mx-auto">
                 <ContainerComentary />
             </div>
         </section>
