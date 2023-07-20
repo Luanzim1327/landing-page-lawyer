@@ -25,7 +25,7 @@ export default function Header () {
             </nav>
             <div className="
                 flex flex-col
-                md:flex md:flex-row
+                md:hidden
                 justify-center 
                 w-3/4
                 mx-auto  
