@@ -3,11 +3,11 @@ import ImagePerson from "../../public/comentarios/cm-1.jpg"
 // stars within container comentary
 export default function Comentarios () {
     return (
-        <section className="flex flex-col items-center">
+        <section className="md:py-10 flex flex-col items-center md:w-3/4 md:mx-auto">
             <div className="py-5">
                 <h2 className="font-bold text-3xl text-slate-800">Meus clientes</h2>
             </div>
-            <div className="flex flex-col md:flex-row md:w-3/4 md:mx-auto">
+            <div className="md:flex w-full md:justify-between">
                 <ContainerComentary />
             </div>
         </section>
@@ -34,14 +34,14 @@ function ContainerComentary () {
     ]
 
     return comments.map((comment) => (
-        <div className="bg-slate-600 mx-2 my-2 px-5">
-            <div className="flex justify-between items-center py-3">
+        <div className="bg-slate-600 px-5 w-64 shadow-lg shadow-slate-200/50">
+            <div className="flex justify-between items-center py-2">
                 <h4 className="text-slate-200 text-2xl">{comment.name}</h4>
                 <div>
-                    <Image src={ImagePerson} className="rounded-full" width={60} height={100} alt="foto" />
+                    <Image src={ImagePerson} className="rounded-full" width={50} alt="foto" />
                 </div>
             </div>
-            <div className="py-3">
+            <div className="py-2">
                 <p className="text-slate-100 italic text-sm">"{comment.comentary}"</p>
             </div>
         </div>

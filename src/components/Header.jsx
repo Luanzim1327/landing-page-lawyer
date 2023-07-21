@@ -13,13 +13,13 @@ export default function Header () {
     // bg-slate-300
     // bg-[url('https://i.pinimg.com/564x/83/12/bc/8312bc853dbf3af9e366cd7646b98a33.jpg')]
     return (
-        <header className="relative bg-slate-300">
+        <header className="relative">
             <nav className="md:flex md:justify-between items-center text-slate-800">
                 <div className="bg-transparent flex justify-between items-center px-2">
                     <h2 className="font-bold text-2xl">Logo</h2>
                     <img className="md:hidden py-2" width={30} name="menu" src={"https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png"} alt="icon" />
                 </div>
-                <ul className=" md:bg-transparent md:items-center flex flex-col text-center md:flex-row bg-slate-200">
+                <ul className=" bg-transparent md:items-center flex flex-col text-center md:flex-row">
                     <ListItem items={itemsList}/>
                 </ul>
             </nav>
