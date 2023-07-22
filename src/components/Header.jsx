@@ -2,18 +2,13 @@
 
 import Image from "next/image";
 import AdvogadoFoto from "../../public/advogado.png"
-import { useState } from "react";
+import {Link} from 'react-scroll';
 
 export default function Header () {
 
-    // const [stateImage , setStateImage] = useState("https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png");
-    // const [menu , setMenu] = useState(0);
-
     let itemsList = ["Home" , "Services" , "About" , "Contact"];
-    // bg-slate-300
-    // bg-[url('https://i.pinimg.com/564x/83/12/bc/8312bc853dbf3af9e366cd7646b98a33.jpg')]
     return (
-        <header className="relative">
+        <header className="md:sticky md:top-0 md:bg-slate-200/50">
             <nav className="md:flex md:justify-between items-center text-slate-800">
                 <div className="bg-transparent flex justify-between items-center px-2">
                     <h2 className="font-bold text-2xl">Logo</h2>
@@ -63,6 +58,13 @@ function ListItem ({items}) {
             url = "/"
         }
 
-        return <li className="cursor-pointer pl-4 py-3 md:px-2 font-semibold hover:bg-slate-400" key={item}>{item}</li>
+        return (
+            <li className="cursor-pointer pl-4 py-3 md:px-1 md:w-20 font-semibold hover:bg-slate-400" key={item}>
+                <Link to={item} activeClass="active" smooth={true} spy={true}>
+                    {item}
+                </Link>
+                {console.log(item)}
+            </li>
+            )
     })
 }

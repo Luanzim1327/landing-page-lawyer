@@ -1,6 +1,6 @@
 export default function Contact () {
     return(
-        <section className="container md:mx-auto flex flex-col py-5 md:w-3/4">
+        <section id="Contact" className="container md:mx-auto flex flex-col py-5 md:w-3/4">
             <div className="flex bg-slate-200">
                 <div className="md:w-1/2 md:h-full">
                     <img src="https://i.pinimg.com/564x/d4/dc/1e/d4dc1e7de1a26cda10d186e66252c788.jpg" alt="lawyer-photo"/>
