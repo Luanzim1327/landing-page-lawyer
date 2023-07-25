@@ -4,16 +4,31 @@ import { useState } from 'react';
 import {Link} from 'react-scroll';
 
 export default function Header () {
+    
+    const [menuResponsive , setMenuResponsive] = useState(false);
+
+
+    function openMenu () {
+        setMenuResponsive(true);
+    }
+
+    function closeMenu () {
+        setMenuResponsive(false);
+    }
 
     let itemsList = ["Home" , "Services" , "About" , "Contact"];
+
     return (
-        <header className="md:sticky md:top-0 md:bg-slate-400/50">
-            <nav className="md:flex md:justify-between items-center text-slate-800">
-                <div className="bg-transparent flex justify-between items-center px-2">
+        <header className="z-10 md:sticky md:top-0 md:bg-slate-400/50">
+            <nav className="relative md:flex md:justify-between text-slate-800">
+                <div className="md:bg-transparent bg-slate-100 w-full md:w-auto fixed md:static top-0 z-10 flex justify-between items-center px-2">
                     <h2 className="font-bold text-2xl">Logo</h2>
-                    <img className="md:hidden py-2" width={30} name="menu" src={"https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png"} alt="icon" />
+                    <img onClick={() => openMenu()} className="md:hidden py-2" width={30} name="menu" src={"https://cdn.icon-icons.com/icons2/934/PNG/512/menu-button_icon-icons.com_72989.png"} alt="icon" />
                 </div>
-                <ul className="bg-transparent md:items-center flex flex-col text-center md:flex-row">
+                <ul className={`${menuResponsive ? "block" : "hidden"} md:bg-transparent w-full md:w-auto bg-slate-400/80 fixed top-0 z-10 md:static md:items-center md:flex flex-col text-center md:flex-row`}>
+                    <div onClick={() => closeMenu()} className='md:hidden m-3'>
+                        <img width={30} src="https://img.icons8.com/?size=512&id=3062&format=png" alt="" />
+                    </div>
                     <ListItem items={itemsList}/>
                 </ul>
             </nav>
