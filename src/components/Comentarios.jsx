@@ -7,7 +7,7 @@ export default function Comentarios () {
             <div className="py-5">
                 <h2 className="font-bold text-3xl text-slate-800">Meus clientes</h2>
             </div>
-            <div className="md:flex w-full md:justify-between">
+            <div className="p-2 md:p-0 md:flex-row md:flex flex-col w-full md:justify-between">
                 <ContainerComentary />
             </div>
         </section>
@@ -34,8 +34,8 @@ function ContainerComentary () {
     ]
 
     return comments.map((comment) => (
-        <div className="bg-slate-600 px-5 w-64 shadow-lg shadow-slate-200/50">
-            <div className="flex justify-between items-center py-2">
+        <div className="bg-slate-600 px-5 my-3 md:my-0 md:w-64 shadow-lg shadow-slate-200/50">
+            <div className="flex md:flex-row justify-between items-center py-2">
                 <h4 className="text-slate-200 text-2xl">{comment.name}</h4>
                 <div>
                     <Image src={ImagePerson} className="rounded-full" width={50} alt="foto" />
