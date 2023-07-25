@@ -1,10 +1,10 @@
 export default  function Areas () {
     return (
-        <section id="Services" className="md:py-10">
+        <section id="Services" className="py-10">
             <div className="py-2 text-center text-slate-800">
                 <h2 className="font-bold text-xl">Áreas de atuação</h2>
             </div>
-            <div className=" md:flex-row md:w-3/4 md:mx-auto flex flex-col py-2 md:justify-between">
+            <div className=" md:flex-row md:w-3/4 md:mx-auto flex flex-col md:py-2 p-2 md:justify-between">
                 <ListArea />
             </div>
         </section>
@@ -33,7 +33,7 @@ function ListArea () {
 
     return areasAtuacao.map((area) => {
         return (
-            <div className="border-slate-200 border-2 rounded">
+            <div className="border-slate-200 border-2 rounded md:my-0 my-3">
                 <div className="flex flex-col space-y-3 w-64 shadow-lg shadow-slate-200/50 p-1">
                     <h4 className="text-orange-500">{area.icone}</h4>
                     <h3 className="text-slate-800">{area.area}</h3>
