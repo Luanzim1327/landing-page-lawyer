@@ -18,6 +18,7 @@ export default function Header () {
                 </ul>
             </nav>
         </header>
+        // Fix features menu responsive
     )
 }
 
