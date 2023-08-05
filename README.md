@@ -24,9 +24,9 @@ Este é um projeto de Landing Page para um advogado, com o objetivo de apresenta
 
 1. Certifique-se de ter o Node.js instalado em seu computador.
 2. Clone este repositório em sua máquina local usando o seguinte comando: git clone https://github.com/luanmas/mm-project.git
-3. Navegue até o diretório do projeto: cd mm-project
-4. Instale as dependências do projeto: npm install
-5. Inicie a aplicação: npm run dev
+3. Navegue até o diretório do projeto:  `cd mm-project`
+4. Instale as dependências do projeto: `npm install`
+5. Inicie a aplicação: `npm run dev`
 
 
 A aplicação será executada em `http://localhost:3000`.
