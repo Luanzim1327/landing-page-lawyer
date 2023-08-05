@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing Page para Advogado
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+Este é um projeto de Landing Page para um advogado, com o objetivo de apresentar informações relevantes sobre o profissional e seus serviços. A página foi desenvolvida utilizando React, Next.js e Tailwind CSS para criar uma experiência responsiva e amigável aos usuários.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Apresentação do advogado e sua história profissional
+- Área de atuação e principais especialidades jurídicas
+- Informações de contato para que os clientes possam entrar em contato facilmente
+- Experiências do advogado e depoimentos de clientes satisfeitos
+- Carrossel interativo para mostrar casos de sucesso ou notícias relevantes
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React
+- Next.js
+- Tailwind CSS
+- React Icons
+- Swiper (para implementar o carrossel)
 
-## Learn More
+## Instalação e Execução
 
-To learn more about Next.js, take a look at the following resources:
+1. Certifique-se de ter o Node.js instalado em seu computador.
+2. Clone este repositório em sua máquina local usando o seguinte comando: git clone https://github.com/luanmas/mm-project.git
+3. Navegue até o diretório do projeto: cd mm-project
+4. Instale as dependências do projeto: npm install
+5. Inicie a aplicação: npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+A aplicação será executada em `http://localhost:3000`.
 
-## Deploy on Vercel
+## Como Contribuir
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se você deseja contribuir com este projeto, sinta-se à vontade para criar um fork deste repositório e enviar suas sugestões através de pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+Este projeto está sob a Licença [MIT](LICENSE).
+
+## Contato
+
+Para mais informações sobre este projeto, entre em contato com o desenvolvedor:
+
+Nome: [Seu Nome]
+Email: [seu@email.com]
+LinkedIn: [seu perfil no LinkedIn]
+
+
+ 
+
+

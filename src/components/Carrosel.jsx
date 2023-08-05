@@ -27,7 +27,7 @@ export default function Carrosel () {
             <Swiper className='z-0' navigation={true} modules={[Navigation]}>
             {images.map((obj) => {
                 return (
-                    <SwiperSlide><img className='w-full h-96 object-fill'  src={obj.image} alt={obj.alt} /></SwiperSlide>
+                    <SwiperSlide key={obj.alt}><img className='w-full h-96 object-fill'  src={obj.image} alt={obj.alt} /></SwiperSlide>
                 )
             })}
             </Swiper>

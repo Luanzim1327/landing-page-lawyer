@@ -7,7 +7,6 @@ export default function Header () {
     
     const [menuResponsive , setMenuResponsive] = useState(false);
 
-
     function openMenu () {
         setMenuResponsive(true);
     }
@@ -52,9 +51,9 @@ function ListItem ({items}) {
         }
 
         return (
-            <li onClick={() => handleItemClick(item)} className={`cursor-pointer pl-4 py-3 md:px-1 md:w-20 font-semibold ${containerFocus === item ? "active" : ""}`} key={item}>
+            <li onClick={() => handleItemClick(item)} key={item} className='h-10'>
                 {/* Chamar a funçãp dessa forma é ótimo para garantir que o evento só aconteça quando o elemento for clicado */}
-                <Link to={item} smooth={true} spy={true}>
+                <Link className="bg-red-500 px-2 w-20 h-full    " to={item} smooth={true} spy={true}>
                     {item}
                 </Link>
             </li>
@@ -62,4 +61,4 @@ function ListItem ({items}) {
     })
 }
 
-// 
+//{`${containerFocus === item ? "active" : ""}`}
