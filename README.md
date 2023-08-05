@@ -43,9 +43,10 @@ Este projeto está sob a Licença [MIT](LICENSE).
 
 Para mais informações sobre este projeto, entre em contato com o desenvolvedor:
 
-Nome: [Seu Nome]
-Email: [seu@email.com]
-LinkedIn: [seu perfil no LinkedIn]
+Nome: Luan Mascarenhas
+Email: contatoluanmas@email.com
+[Linkedin](https://www.linkedin.com/in/luan-mascarenhas/)
+
 
 
  
