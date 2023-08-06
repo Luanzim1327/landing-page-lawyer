@@ -1,0 +1,43 @@
+.aboutContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+
+    img {
+        max-width: 500px;
+    }
+}
+
+.aboutContentText {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left:40px;
+
+    span {
+        color: var(--yellow-500);
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-weight: 900;
+    }
+
+    div {
+        margin-top: 5rem;
+        padding: 3rem 2.5rem;
+        border: 5px solid var(--yellow-500);
+
+        p {
+            line-height: 1.5rem;
+        }
+    }
+}

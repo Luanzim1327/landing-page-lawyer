@@ -1,0 +1,46 @@
+.infoContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    
+    padding: 5rem 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+
+    h2 {
+        position: relative;
+        margin: 5rem 0;
+        font-size: 2.5rem;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: var(--yellow-500);
+        }
+    }
+}
+
+.infoItems {
+    & + .infoItems {
+        margin-top: 3rem;
+    }
+
+    h3 {
+        margin-bottom: 0.25rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+}

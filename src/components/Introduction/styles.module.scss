@@ -1,0 +1,24 @@
+.aboutContainer {
+    padding: 5rem 0;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    color: #242f3a;
+
+    .aboutContent {
+        max-width: 768px;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        p {
+            & + p {
+                    margin-top: 1rem;    
+            } 
+        }
+    }
+}
