@@ -1,0 +1,121 @@
+.containerFooter {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 8rem 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerSubscribeNewsletter {
+    max-width: 300px;
+
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.8rem 0.5rem;
+        border: 0.25rem solid var(--gray-100);
+        outline: none;
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: var(--yellow-500);
+        color: var(--white);
+        border: none;
+        outline: none;
+        transition: ease-in 0.2s;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: var(--white);
+            color: var(--yellow-500);
+            border-color: var(--yellow-500);
+        }
+    }
+
+}
+
+.containerNetwork {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        & + svg {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            color: var(--yellow-500);
+        }
+
+    }
+}
+
+
+.containerPosts {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+.itemPost {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+
+    p {
+        color: var(--blue-400);
+        transition: 0.2s;
+
+        &:hover {
+            color: #98938b;
+        }
+    }
+}
+
+.containerCopyright {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    p {
+        position: relative;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 1rem;
+        
+        &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: var(--gray-100);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    padding: 2rem 0;   
+}
+
+// fazer com grid

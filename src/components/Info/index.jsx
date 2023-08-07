@@ -36,7 +36,7 @@ function ItemInfo () {
     return (
         infoContentText.map((item) => {
             return(
-                <div className={styles.infoItems}>
+                <div className={styles.infoItem}>
                     <h3>{item.title}</h3>
                     <p>{item.description}</p> 
                 </div>
