@@ -1,23 +1,22 @@
 "use client";
 
-import Modal from "../Modal";
-import { useModalContact } from "../Modal";
+import { useState } from "react";
+import Link from "next/link";
 import styles from "./styles.module.scss"
-import ReactModal from "react-modal";
 
 export default function Header () {
-    const { displayModal , setDisplayModal } = useModalContact();
+    const [activeItem , setActiveItem] = useState(false); 
 
     return (
         <header className={styles.headerContainer}>
             <nav className={styles.headerContent}>
                 <h2>Logo</h2>
                 <ul>
-                    <li className={styles.active}>
-                        <a>Home</a>
+                    <li>
+                        <Link className={styles.navigationLink} href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <a onClick={() => setDisplayModal(true)}>Contact</a>
+                        <Link className={styles.navigationLink} href={"/contact"}>Contact</Link>
                     </li>
                 </ul>
             </nav>
