@@ -1,7 +1,7 @@
 .containerFooter {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 0 40px;
 
     display: flex;
     justify-content: space-between;
@@ -85,11 +85,12 @@
     font-size: 1.2rem;
 
     p {
-        color: var(--blue-400);
+        // color: var(--blue-400);
+        color: #98938b;
         transition: 0.2s;
 
         &:hover {
-            color: #98938b;
+            filter: brightness(0.5);
         }
     }
 }
