@@ -16,7 +16,7 @@ Este é um projeto de Landing Page para um advogado, com o objetivo de apresenta
 
 - React
 - Next.js
-- Tailwind CSS
+- Sass
 - React Icons
 - Swiper (para implementar o carrossel)
 
